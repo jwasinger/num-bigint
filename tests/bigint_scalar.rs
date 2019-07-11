@@ -1,9 +1,9 @@
-extern crate num_bigint;
+extern crate num_bigint_dig as num_bigint;
 extern crate num_traits;
 
 use num_bigint::BigInt;
 use num_bigint::Sign::Plus;
-use num_traits::{Zero, Signed, ToPrimitive};
+use num_traits::{Signed, ToPrimitive, Zero};
 
 use std::ops::Neg;
 
@@ -142,5 +142,4 @@ fn test_scalar_div_rem() {
             check(&a, b, &c, &d);
         }
     }
-
 }
