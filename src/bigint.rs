@@ -110,8 +110,8 @@ impl<'de> serde::Deserialize<'de> for Sign {
 /// A big signed integer type.
 #[derive(Clone, Debug, Hash)]
 pub struct BigInt {
-    sign: Sign,
-    data: BigUint,
+    pub sign: Sign,
+    pub data: BigUint,
 }
 
 /// Return the magnitude of a `BigInt`.
